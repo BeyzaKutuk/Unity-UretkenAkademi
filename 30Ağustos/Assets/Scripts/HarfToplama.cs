@@ -30,9 +30,12 @@ public class HarfToplama : MonoBehaviour
     public TextMeshProUGUI m;
     public TextMeshProUGUI i;
 
+    private int count = 0;
+    public GameObject panel;
+
     private void OnCollisionEnter(Collision col)
     {
-        int count=0;
+        
         if(col.gameObject.tag == "Harf")
         {
             Destroy(col.gameObject);
@@ -98,6 +101,11 @@ public class HarfToplama : MonoBehaviour
                     count++;
                     break;
 
+            }
+
+            if(count == 12)
+            {
+                panel.gameObject.SetActive(true);
             }
         }
         
