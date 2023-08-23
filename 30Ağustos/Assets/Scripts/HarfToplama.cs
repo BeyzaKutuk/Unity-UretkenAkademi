@@ -16,7 +16,7 @@ public class HarfToplama : MonoBehaviour
     {
         
     }
-
+    
     public TextMeshProUGUI z;
     public TextMeshProUGUI a1;
     public TextMeshProUGUI f;
@@ -32,7 +32,7 @@ public class HarfToplama : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        
+        int count=0;
         if(col.gameObject.tag == "Harf")
         {
             Destroy(col.gameObject);
@@ -40,50 +40,62 @@ public class HarfToplama : MonoBehaviour
             {
                 case "A1 harfi":
                     a1.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "B harfi":
                     b.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "E harfi":
                     e.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "A2 harfi":
                     a2.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "A3 harfi":
                     a3.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "Z harfi":
                     z.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "Y harfi":
                     y.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "F harfi":
                     f.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "R1 harfi":
                     r1.gameObject.SetActive(true);
+                    count++;
                     break;
 
-                case "R2 Harfi":
+                case "R2 harfi":
                     r2.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "M harfi":
                     m.gameObject.SetActive(true);
+                    count++;
                     break;
 
                 case "I harfi":
                     i.gameObject.SetActive(true);
+                    count++;
                     break;
 
             }
